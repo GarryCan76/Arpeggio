@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+.flex_collumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#arpeggio_box {
+    background-color: cadetblue;
+    width: 1000px;
+    height: 500px;
+}
+#arpeggio_visual {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 300px;
+}
+
+#sound {
+    position: relative;
+    bottom: 21px;
+    left: 80%;
+    background-color: dimgray;
+    width: 200px;
+}
+.sound_bar {
+    height: 10px;
+    width: 30px;
+    background-color: cornflowerblue;
+    margin: 10px;
+
+}
+h4 {
+    font-size: 90px;
+    color: white;
+}

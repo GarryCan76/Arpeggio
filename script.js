@@ -9,6 +9,7 @@ let maininterval;
 let range_witdh = 500;
 let pitch_point = 300;
 let connected = false;
+osc_type = 'sine';
 const visual_fs = [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20];
 
 sound.start()
@@ -45,6 +46,23 @@ range.oninput = function () {
 pitcher.oninput = function () {
     pitch_span.innerHTML = this.value
     pitch_point = parseInt(this.value)
+}
+osc_slider.oninput = function () {
+    osc_value = parseInt(this.value)
+    if (osc_value === 0) {
+        osc_type = 'sine';
+    }
+    if (osc_value === 1) {
+        osc_type = 'square';
+    }
+    if (osc_value === 2) {
+        osc_type = 'sawtooth';
+    }
+    if (osc_value === 3) {
+        osc_type = 'triangle';
+    }
+    sound.type = osc_type;
+    osc_span.innerHTML = osc_type;
 }
 maininterval = setInterval(picher,time_out)
 function picher() {

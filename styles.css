@@ -42,14 +42,14 @@ input[type=range] {
     -webkit-appearance: none;
     background-color: gray;
     width: 750px;
-    height: 14px;
+    height: 12px;
     outline: none;
     border-radius: 3px;
 }
 input::-webkit-slider-thumb{
     -webkit-appearance: none;
     width: 7px;
-    height: 28px;
+    height: 24px;
     background-color: plum;
 }
 span {
@@ -64,7 +64,7 @@ span {
     margin: 10px;
 }
 label {
-    font-size: 30px;
+    font-size: 22px;
     font-family: Impact, serif;
 }
 button {

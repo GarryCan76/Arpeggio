@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Arpeggio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/osc.png">
 </head>
 <body class="flex_collumn">
 <div id="arpeggio_visual">
@@ -48,6 +49,11 @@
         <label style="color:#0392cf">Pitch</label>
         <span id="pitch_span">300</span>
         <input type='range' max=1000 value=300 step=1 id='pitcher'>
+    </div>
+    <div class="nob">
+        <label style="color:mediumpurple">Oscillator type</label>
+        <span id="osc_span">sine</span>
+        <input type='range' max=3 value=0 step=1 id='osc_slider'>
     </div>
     <br>
     <button onclick="play()">play/stop</button>

@@ -2,46 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Musik</title>
+    <title>Arpeggio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="flex_collumn">
 <div id="arpeggio_visual">
-    <div class="sound_bar"></div>
-    <div class="sound_bar"></div>
-    <div class="sound_bar"></div>
-    <div class="sound_bar"></div>
-    <div class="sound_bar"></div>
+    <div class="sound_bar" id="vnode_1"></div>
+    <div class="sound_bar" id="vnode_2"></div>
+    <div class="sound_bar" id="vnode_3"></div>
+    <div class="sound_bar" id="vnode_4"></div>
+    <div class="sound_bar" id="vnode_5"></div>
+    <div class="sound_bar" id="vnode_6"></div>
+    <div class="sound_bar" id="vnode_7"></div>
+    <div class="sound_bar" id="vnode_8"></div>
+    <div class="sound_bar" id="vnode_9"></div>
+    <div class="sound_bar" id="vnode_10"></div>
+    <div class="sound_bar" id="vnode_11"></div>
+    <div class="sound_bar" id="vnode_12"></div>
 
 </div>
 <div id="arpeggio_box" class="flex_collumn">
-    <h4>Arpeggio</h4>
-    <button onclick="play()">play/stop</button>
-    <div>
-        <label>Sound</label>
-        <input type='range' max=1 value=0.1 step=0.01 id='volslider'>
+    <br>
+    <div class="nob">
+        <label style="color:#ee4035">Volume</label>
         <span id="volslider_span">0.1</span>
+        <input type='range' max=1 value=0.1 step=0.01 id='volslider'>
     </div>
-    <div>
-        <label>frequenty_change</label>
-        <input type='range' max=1000 value=100 step=1 id='frequency_change'>
+    <div class="nob">
+        <label style="color:#f37736">Frequency change</label>
         <span id="frequency_change_span">100</span>
+        <input type='range' max=1000 value=100 step=1 id='frequency_change'>
     </div>
-    <div>
-        <label>time out</label>
-        <input type='range' max=1000 value=100 step=1 id='timer'>
+    <div class="nob">
+        <label style="color:#fdf498">Speed</label>
         <span id="timer_span">100</span>
+        <input type='range' max=250 value=100 step=1 id='timer'>
+
     </div>
-    <div>
-        <label>range</label>
-        <input type='range' max=1000 value=500 step=1 id='range'>
+    <div class="nob">
+        <label style="color:#7bc043">Range</label>
         <span id="range_span">500</span>
+        <input type='range' max=1000 value=500 step=1 id='range'>
     </div>
-    <div>
-        <label>pitch</label>
-        <input type='range' max=1000 value=300 step=1 id='pitcher'>
+    <div class="nob">
+        <label style="color:#0392cf">Pitch</label>
         <span id="pitch_span">300</span>
+        <input type='range' max=1000 value=300 step=1 id='pitcher'>
     </div>
+    <br>
+    <button onclick="play()">play/stop</button>
+    <br>
 
 
 </div>

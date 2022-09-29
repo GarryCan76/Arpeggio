@@ -1,41 +1,80 @@
 body {
-    background-color: gray;
+    background-color: dimgray;
 }
 .flex_collumn {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 #arpeggio_box {
-    background-color: cadetblue;
-    width: 1000px;
-    height: 500px;
+    background-color: #403F3F;
+    width: 100%;
+    height: 100%;
 
 }
 #arpeggio_visual {
-    background-color: rebeccapurple;
+    background-color: #2C2B2B;
     display: flex;
     justify-content: center;
-    width: 1000px;
-    height: 300px;
+    align-items: end;
+    width: 100%;
+    height: 350px;
 }
 
 #sound {
     position: relative;
     bottom: 21px;
     left: 80%;
-    background-color: dimgray;
     width: 200px;
 }
 .sound_bar {
     height: 10px;
-    width: 30px;
-    background-color: cornflowerblue;
-    margin: 10px;
+    width: 75px;
+    background-image: linear-gradient(mediumpurple, rebeccapurple);
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+
 
 }
-h4 {
-    font-size: 90px;
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: gray;
+    width: 750px;
+    height: 14px;
+    outline: none;
+    border-radius: 3px;
+}
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 7px;
+    height: 28px;
+    background-color: plum;
+}
+span {
     color: white;
+}
+.nob {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+label {
+    font-size: 30px;
+    font-family: Impact, serif;
+}
+button {
+    background-color: hotpink;
+    width: 300px;
+    height: 75px;
+    color: white;
+    font-size: 30px;
+    font-family: Impact, serif;
+}
+button:hover {
+    background-color: pink;
 }

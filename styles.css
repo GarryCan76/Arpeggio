@@ -65,16 +65,20 @@ span {
 }
 label {
     font-size: 22px;
-    font-family: Impact, serif;
+    font-family: Impact, serif
 }
 button {
-    background-color: hotpink;
+    background-color: tomato;
     width: 300px;
     height: 75px;
     color: white;
     font-size: 30px;
     font-family: Impact, serif;
+    border-radius: 20px;
 }
 button:hover {
-    background-color: pink;
+    background-color: orangered;
+}
+a {
+    color: darkblue;
 }
